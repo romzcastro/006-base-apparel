@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <script defer src="./main.js" defer></script>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body class="flex-center min-h-screen text-base">
+    <main
+      class="w-screen max-w-[375px] md:h-screen md:max-w-full md:flex md:flex-row-reverse md:justify-center md:items-center"
+    >
+      <div class="hidden md:flex md:flex-1 w-full">
+        <img src="./images/hero-desktop.jpg" alt="hero-desktop" width="100%" />
+      </div>
+      <!-- <div class="md:flex md:flex-1 w-full"></div> -->
+      <section class="md:px-20 md:flex md:flex-col md:flex-1">
+        <nav class="p-6 py-10">
+          <img src="./images/logo.svg" alt="logo" width="35%" />
+        </nav>
+        <div class="md:hidden">
+          <img src="./images/hero-mobile.jpg" alt="hero-mobile" />
+        </div>
+        <section class="p-6 px-11 text-center md:text-left">
+          <section>
+            <h1
+              class="text-5xl text-secondary_3 font-semibold py-5 pt-10 tracking-[.25em] md:text-7xl"
+            >
+              <span class="font-light text-primary_1">WE'RE </span
+              ><br />COMING<br />
+              SOON
+            </h1>
+            <p class="text-primary_1 pb-8">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+            <form
+              class="relative w-full"
+              id="form"
+              action="/"
+              onsubmit="checkEmail()"
+            >
+              <div class="absolute w-full form-control">
+                <input
+                  class="border-2 border-secondary_3/10 p-3 px-7 rounded-full w-full"
+                  type="email"
+                  placeholder="Email Address"
+                  id="email"
+                  onkeyup="checkEmail()"
+                />
+                <p
+                  class="absolute -bottom-7 left-7 text-sm text-primary_2 hidden"
+                  id="error"
+                >
+                  error message
+                </p>
+              </div>
+              <div class="absolute right-20 top-3 h-full hidden" id="error-img">
+                <img src="./images/icon-error.svg" alt="icon-error" />
+              </div>
+
+              <div class="absolute right-0">
+                <button
+                  class="cursor-pointer bg-gradient-to-tl from-primary_2 to bg-primary_1 p-4 px-7 rounded-full hover:bg-gradient-to-tl hover:from-gradient_4 to hover:bg-gradient_3 hover:shadow-2xl hover:shadow-secondary_3"
+                  type="submit"
+                >
+                  <img src="./images/icon-arrow.svg" alt="icon-arrow" />
+                </button>
+              </div>
+            </form>
+          </section>
+        </section>
+      </section>
+    </main>
+    <!-- <footer class="p-4 text-center">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/romzcastro"
+          target="_blank"
+          >Jerome R Castro</a
+        >.
+      </p>
+    </footer> -->
+  </body>
+</html>
