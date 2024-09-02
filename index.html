@@ -17,18 +17,21 @@
   </head>
   <body class="flex-center min-h-screen text-base">
     <main
-      class="w-screen max-w-[375px] md:h-screen md:max-w-full md:flex md:flex-row-reverse md:justify-center md:items-center"
+      class="w-screen md:h-screen md:max-w-full md:flex md:flex-row-reverse md:justify-center md:items-center"
     >
-      <div class="hidden md:flex md:flex-1 w-full">
-        <img src="./images/hero-desktop.jpg" alt="hero-desktop" width="100%" />
-      </div>
-      <!-- <div class="md:flex md:flex-1 w-full"></div> -->
-      <section class="md:px-20 md:flex md:flex-col md:flex-1">
+      <div
+        class="hidden md:flex md:flex-1 w-full h-full bg-no-repeat bg-cover"
+        style="background-image: url(./images/hero-desktop.jpg)"
+      ></div>
+      <section class="md:px-5 md:flex md:flex-col md:flex-1 lg:px-20">
         <nav class="p-6 py-10">
           <img src="./images/logo.svg" alt="logo" width="35%" />
         </nav>
-        <div class="md:hidden">
-          <img src="./images/hero-mobile.jpg" alt="hero-mobile" />
+        <div
+          class="md:hidden w-full h-[320px] bg-no-repeat bg-cover"
+          style="background-image: url(./images/hero-mobile.jpg)"
+        >
+          <!-- <img src="./images/hero-mobile.jpg" alt="hero-mobile" /> -->
         </div>
         <section class="p-6 px-11 text-center md:text-left">
           <section>
@@ -80,20 +83,22 @@
             </form>
           </section>
         </section>
+        <footer class="p-4 text-center mt-14">
+          <p>
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a
+              href="https://www.frontendmentor.io/profile/romzcastro"
+              target="_blank"
+              >Jerome R Castro</a
+            >.
+          </p>
+        </footer>
       </section>
     </main>
-    <!-- <footer class="p-4 text-center">
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a
-          href="https://www.frontendmentor.io/profile/romzcastro"
-          target="_blank"
-          >Jerome R Castro</a
-        >.
-      </p>
-    </footer> -->
   </body>
 </html>
